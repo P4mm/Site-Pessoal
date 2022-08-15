@@ -174,4 +174,39 @@ ul.timeline a {
 img {
     border: 2px solid grey;
     border-radius: 120px;
+    max-width: 1080px;
+}
+
+
+/*Media Query*/
+
+@media(max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 630px) {
+    html {
+        flex-direction: column;
+    }
+    .img {
+        order: -1;
+    }
+}
+
+@media(max-width: 540px) {
+    nav {
+        display: none;
+    }
+    .img {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .img {
+        width: 100%;
+        display: none;
+    }
 }
